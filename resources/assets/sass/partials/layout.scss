@@ -1,0 +1,23 @@
+*{
+  @include box-sizing(border-box);
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  //margin-top: -21px;
+  font-size: 16px;
+}
+
+a{
+  text-decoration: none;
+  color: $link_color;
+}
+
+.layout{
+  @include outer-container;
+  position: relative;
+}
+
+ul{
+  @include remove_bullets;
+}

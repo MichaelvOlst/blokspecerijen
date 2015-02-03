@@ -1,0 +1,3 @@
+(function(){
+    //something in here
+})();

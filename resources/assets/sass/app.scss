@@ -6,9 +6,12 @@
 //import modules
 @import "modules/variables";
 @import "modules/colors";
+@import "modules/mixin";
 
 //partials
-/*@import "partials/layout";*/
-/*@import "partials/header";*/
-/*@import "partials/home";*/
+@import "partials/layout";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/nav";
+@import "partials/home";
 

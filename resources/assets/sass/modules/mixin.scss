@@ -1,0 +1,42 @@
+@mixin center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin remove_bullets{
+  list-style: none;
+}
+
+@mixin scale($scale){
+  -ms-transform: scale($scale); /* IE 9 */
+  -webkit-transform: scale($scale); /* Chrome, Safari, Opera */
+  transform: scale($scale);
+}
+
+// media queries
+
+@mixin respond-to($media) {
+  @if $media == S {
+    @media only screen and (max-width: $small) { @content; }
+  }
+  @else if $media == M {
+    @media only screen and (min-width: $small + 1) and (max-width: $large - 1) { @content; }
+  }
+  @else if $media == L {
+    @media only screen and (min-width: $large) { @content; }
+  }
+}
+
+//@mixin respond-to($canvas) {
+//  @if $canvas == S {
+//    @media only screen and (min-width: $small) and (max-width: $medium - 1) { @content; }
+//  }
+//  @else if $canvas == M {
+//    @media only screen and (min-width: $M) and (max-width: $large - 1) { @content; }
+//  }
+//  @else if $canvas == L {
+//    @media only screen and (min-width: $L) { @content; }
+//  }
+//}
